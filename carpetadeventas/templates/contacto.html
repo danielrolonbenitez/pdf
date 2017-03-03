@@ -1,0 +1,92 @@
+<style>
+img{
+	float:left;
+	min-width:100%;
+	width:100%;
+}
+li,h3,h4,h5{
+text-transform:uppercase;
+color:#0048ff;
+}
+ul{
+list-style:none;
+}
+li span{
+text-transform:lowercase
+}
+li{
+	padding-top: 5px;
+}
+td{
+text-align:center;
+}
+table{
+width:100%;
+}
+.datos{
+text-align:left;
+}
+.col-md-12{
+width:100%;
+}
+.col-md-9{
+width:75%;
+}
+.col-md-8{
+width:66%;
+}
+.col-md-8{
+width:66%;
+}
+.col-md-6{
+width:50%;
+}
+.col-md-4{
+width:33%;
+}
+.col-md-3{
+width:25%;
+}
+.pull-left{
+float:left;
+}
+.text-center{
+text-align:center;
+}
+.text-right{
+text-align:right;
+}
+.text-left{
+text-align:left;
+}
+.text-uppercase{
+text-transform:uppercase;
+}
+.text-capitalize{
+text-transform:capitalize;
+}
+</style>
+<page>
+	<table height="600">
+		<tr>
+			<td> <img style="width:100%" src="/var/www/html/blog/prohtools/carpetadeventas/templates/img/contacto/header.png" /> </td>
+		</tr>
+		
+		<tr>
+			<td><h3  >Datos de Contacto</h3> </td>
+		</tr>
+		<tr>
+			<td class="datos col-md-4 text-right">
+				<ul>
+					<li><strong><?php echo $_POST['contacto']['persona']['nombre'].' '.$_POST['contacto']['persona']['apellido']?></strong></li>
+					<li><span><?php echo $_POST['contacto']['persona']['email']; ?></span></li>
+					<li><strong>TE: </strong><?php echo $_POST['contacto']['telefono']['area']; ?> - <?php echo $_POST['contacto']['telefono']['numero']; ?> <?php if(isset($_POST['contacto']['alternativo']['numero'])&& $_POST['contacto']['alternativo']['numero'] != ''): echo " / ".$_POST['contacto']['alternativo']['area'].' - '.$_POST['contacto']['alternativo']['numero']; endif; ?> </li>
+					<li><strong>Direcci&Oacute;n: </strong><?php echo $_POST['contacto']['domicilio']['direccion']; ?></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<page_footer>
+		<img style="width:100%" src="/var/www/html/blog/prohtools/carpetadeventas/templates/img/contacto/footer.png" />
+	</page_footer>
+</page>

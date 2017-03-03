@@ -1,0 +1,179 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prohygiene PDF Ventas</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://blog.prohygiene.com/prohtools/style/layout.css">
+
+</head>
+<body id="form" class="carpetaDeVentas">
+<div class="container">
+	<div class="row index">
+		<img src="img/banner.jpg" class="img-responsive banner" />
+			<a class="btn btn-primary btn-md first" data-toggle="tab" data-target="#step1" data-step="1">Crear carpeta personalizada</a>
+		
+		  <!--ul style="list-style:none;padding:0;">
+			<li><a href="!#" target="_blank"><strong>Carpeta de Venta 1</strong></a><span class="col-xs-12"><ul>Desodorizacion - Aromatizacion - Gestion de Residuos Femeninos - Control de Polvo</i></span></li>
+			<li><a href="!#" target="_blank"><strong>Carpeta de Venta 2</strong></a><span class="col-xs-12"><ul>Desodorizacion - Aromatizacion - Gestion de Residuos Femeninos</i></span></li>
+			<li><a href="!#" target="_blank"><strong>Carpeta de Venta 3</strong></a><span class="col-xs-12"><ul>Desodorizacion - Aromatizacion - Control de Polvo</i></span></li>
+			<li><a href="!#" target="_blank"><strong>Carpeta de Venta 4</strong></a><span class="col-xs-12"><ul>Desodorizacion - Aromatizacion</i></span></li>
+		  </ul-->	
+
+			<div class="itemsContainer">
+				<p>Tambi&eacute;n podr&aacute; descargar las carpetas pre armadas con los sistemas que se detallan a continuaci&oacute;n</p>
+				<h5>Selecciona una de nuestras carpetas de venta</h5>
+				<div class="itemsRow">
+					<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<a target="_blank" href="prohygiene1.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+				<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<img src="img/3-big.png" alt="Sistema de gestión de residuos femeninos">
+						<a target="_blank" href="prohygiene2.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+				</div>
+				<div class="itemsRow">
+					<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<img src="img/4-big.png" alt="Sistema de control de polvo y suciedad">
+						<a target="_blank" href="prohygiene3.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+					<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<img src="img/3-big.png" alt="Sistema de gestión de residuos femeninos">
+						<img src="img/4-big.png" alt="Sistema de control de polvo y suciedad">
+						<a target="_blank" href="prohygiene4.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+				</div>
+				<div class="itemsRow">
+					<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<img src="img/5-big.png" alt="Sistema de gestión de residuos femeninos">
+						<a target="_blank" href="prohygiene5.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+					<div class="cell">
+						<img src="img/1-big.png" alt="Sistema de desodización de baños">
+						<img src="img/2-big.png" alt="Sistema de aromatización de ambientes">
+						<img src="img/5-big.png" alt="Sistema de gestión de residuos femeninos">
+						<img src="img/4-big.png" alt="Sistema de control de polvo y suciedad">
+						<a target="_blank" href="prohygiene6.pdf"><img src="img/button-download.png" alt="Descargar carpeta"></a>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+	<div class="row hidden" id="myWizard">
+	  
+	   <!-- <h3>Carpetas de Venta</h3>
+	  
+	   <hr> -->
+	  
+	   <div class="progress">
+		 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="2" style="width: 50%;">
+		   Paso 1 de 2
+		 </div>
+	   </div>
+	  
+	   <div class="navbar">
+		  <div class="navbar-inner">
+				<ul class="nav nav-pills">
+				   <li class="primera active"><a data-target="#step1" data-toggle="tab" data-step="1">Paso 1</a></li>
+				   <li><a data-target="#step2" data-toggle="tab" data-step="2">Paso 2</a></li>
+				</ul>
+		  </div>
+	   </div>
+	   <form action="" method="POST" name="carpeta" id="carpeta">
+	   <div class="tab-content form-horizontal">
+		  <div class="tab-pane fade" id="step1">
+			 <div class="well col-md-12 pull-left text-center"> 
+				<h4>Seleccione los componentes de la carpeta</h4>
+				<div class="form-group">
+					<div class="col-md-12"><label><input name="componentes[]" type="checkbox" value="1" checked /><img src="img/1.png" /></label></div>
+					<div class="col-md-12"><label><input name="componentes[]" type="checkbox" value="2" checked /><img src="img/2.png" /></label></div>
+					<div class="col-md-12"><label><input name="componentes[]" type="checkbox" value="3" checked /><img src="img/3.png" /></label></div>
+					<div class="col-md-12"><label><input name="componentes[]" type="checkbox" value="5"  /><img src="img/5.png" /></label></div
+					>
+					<div class="col-md-12"><label><input name="componentes[]" type="checkbox" value="4" checked /><img src="img/4.png" /></label></div>
+				</div>
+			 </div>
+			 <a class="btn btn-primary btn-md next" data-toggle="tab" data-target="#step2" data-step="2">Continuar</a>
+		  </div>
+		  <div class="tab-pane fade" id="step2">
+			<div class="well col-md-12 pull-left"> 
+				<h4>Datos de contacto</h4> 
+					<div class="col-md-12 pull-left">
+						<div class="form-group pull-left col-md-4">
+							<label>Nombre</label><input type="text" class="form-control" id="contacto-persona-nombre" name="contacto[persona][nombre]" required placeholder="Nombre" >
+							<span class="error-msg col-md-12"></span>
+						</div>
+						<div class="form-group pull-left col-md-4">
+							<label>Apellido</label><input type="text" class="form-control" id="contacto-persona-apellido" name="contacto[persona][apellido]" required placeholder="Apellido" >
+							<span class="error-msg col-md-12"></span>
+						</div>
+						<div class="form-group pull-left col-md-4">
+							<label>Email</label><input type="email" class="form-control" id="contacto-persona-email" name="contacto[persona][email]" required placeholder="email@ejemplo.com" >
+							<span class="error-msg col-md-12"></span>
+						</div>
+						<div class="form-group pull-left col-md-12">
+							<label>Direccion</label><textarea  class="form-control" id="contacto-domicilio-direccion" name="contacto[domicilio][direccion]" required placeholder="EJ: 49 Libertad 1234, V.Ballester, Buenos Aires, Argentina"></textarea>
+							<span class="error-msg col-md-12"></span>
+						</div>
+						<div class="form-group pull-left col-md-12">
+							<label class="text-left col-md-12"><h5><strong>Telefono</strong></h5></label>
+							<div class="form-group pull-left col-md-4">
+								<label class="text-left col-md-12"><h5><strong>&Aacute;rea</strong></h5></label>
+								<input type="text" class="form-control" id="contacto-telefono-area" name="contacto[telefono][area]" data-validate="numbers" placeholder="Cod.Area" required>
+								<span class="error-msg col-md-12"></span>
+							</div>
+							<div class="form-group pull-right col-md-8">
+							<label class="text-left col-md-12"><h5><strong>N&uacute;mero</strong></h5></label>
+								<input type="text" class="form-control" id="contacto-telefono-numero" name="contacto[telefono][numero]" data-validate="numbers" placeholder="Numero" required>
+								<span class="error-msg col-md-12"></span>
+							</div>
+						</div>
+						<div class="form-group pull-left col-md-12">	
+							<label class="text-left col-md-12"><h5><strong>Telefono Alternativo</strong></h5></label>
+							<div class="form-group pull-left col-md-4">
+								<label class="text-left col-md-12"><h5><strong>&Aacute;rea</strong></h5></label>
+								<input type="text" class="form-control" id="contacto-alternativo-area" name="contacto[alternativo][area]" data-validate="numbers" placeholder="Cod.Area"  >
+								<span class="error-msg col-md-12"></span>
+							</div>
+							<div class="form-group pull-right col-md-8">
+								<label class="text-left col-md-12"><h5><strong>N&uacute;mero</strong></h5></label>
+								<input type="text" class="form-control" id="contacto-alternativo-numero" name="contacto[alternativo][numero]" data-validate="numbers" placeholder="Numero" >
+								<span class="error-msg col-md-12"></span>
+							</div>
+						</div>
+					</div>
+				<a data-target="#step3" data-toggle="tab" data-step="2" class="btn btn-primary btn-md" id="armar">Armar Carpeta</a>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="step3">
+			<div class="well col-md-12 pull-left text-center"> 	
+				<h4>Has creado tu carpeta de venta</h4>
+				<button type="submit" class="text-center btn btn-primary" id="download" >Descargala ahora</button>
+			</div>
+			 <a class="btn btn-primary btn-md reset" >Reiniciar</a>
+		  </div>
+	   </div>
+	   </form>
+	  
+	</div>
+</div>
+	
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
